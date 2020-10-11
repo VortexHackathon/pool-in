@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ff5c5c;
+  color: white;
+}
+        </style>
+        <meta charset="utf-8">
+        <title>Find pools</title>
+        <link rel="icon" href="/static/img/LOGO.png">
+        <link rel="stylesheet" type="text/css" href="/static/viewpool.css">
+    </head>
+    <body bgcolor="#f2f2f2">
+    <div>
+            <nav>
+                <img src="/static/img/LOGO_DISPLAY.png" width="200px" height="80px">
+            <ul>
+                <li><a href="/welcome">Home</a></li>
+                <li><a href="/teamvortex">Team</a></li>
+                <li><a href="/postpool">Post Pool</a></li>
+                <li><a href="/findpool">Find Pool</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+
+    </div>
+                    <table id="customers">
+                        <tr>
+                          <th>Name</th>
+                          <th>Starting address</th>
+                          <th>Destination</th>
+                          <th>Contact</th>
+                          <th>Vehicle</th>
+                        </tr>
+                        {{html_code | safe}}
+                        </table>
+    </body>
+</html>

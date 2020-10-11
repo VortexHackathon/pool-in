@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              margin: 0;
+            }
+            
+            html {
+              box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            
+            .column {
+              float: left;
+              width: 33.3%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              margin: 8px;
+            }
+            
+            .about-section {
+              padding: 50px;
+              text-align: center;
+              background-color: #474e5d;
+              color: white;
+            }
+            
+            .container {
+              padding: 0 16px;
+            }
+            
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .title {
+              color: grey;
+            }
+            
+            .button {
+              border: none;
+              outline: 0;
+              display: inline-block;
+              padding: 8px;
+              color: white;
+              background-color: #000;
+              text-align: center;
+              cursor: pointer;
+              width: 100%;
+            }
+            
+            .button:hover {
+              background-color: #555;
+            }
+            
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            </style>
+        <meta charset="utf-8">
+        <title>Team Vortex</title>
+        <link rel="icon" href="/static/img/LOGO.png">
+        <link rel="stylesheet" type="text/css" href="/static/viewpool.css">
+    </head>
+    <body bgcolor="#f2f2f2">
+    <div>
+            <nav>
+                <img src="/static/img/LOGO_DISPLAY.png" width="200px" height="80px">
+            <ul>
+                <li><a href="/welcome">Home</a></li>
+                <li><a href="/teamvortex">Team</a></li>
+                <li><a href="/postpool">Post Pool</a></li>
+                <li><a href="/findpool">Find Pool</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/static/img/mallika.jpg" alt="Mallika" style="width:100%">
+            <div class="container">
+              <h2>Mallika Evuri</h2>
+              <p class="title">Front-End Developer</p>
+              <p>I am Mallika and I am from Hyderabad, India! Steel City Hacks, Oct 2020 has provided me with an amazing opportunity to show my coding skills as well as collaborate with some amazing team mates and engage in innovative project!</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="/static/img/sohaibullah.jpeg" alt="Shohaibullah" style="width:100%">
+            <div class="container">
+              <h2>Shohaibullah Najmi</h2>
+              <p class="title">Database Administrator</p>
+              <p>I am sohaibullah Najmi from Bokaro Steel City studying in the 12th standard.  I see myself as a relentless problem-solver, and I’m always looking for a new challenge. This Hackathon is very competitive and challenging. In this competitive environment, I learnt a lot. I thank all the organizers of the Hackathon for giving us the opportunity to express our ideas and skills.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="/static/img/aditya.jpeg" alt="aditya" style="width:100%">
+            <div class="container">
+              <h2>Aditya Kumar</h2>
+              <p class="title">Back-End Developer</p>
+              <p>I am Aditya Kumar. I am from Jharkhand, India. I have been learning python for the last one and a half year, and I want to get in the infosec scene. I came to know about the Steel City Hacks from my school, it was a great opportunity to me, as I really wanted to test my skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+</html>
